@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 80px 10%;
+}
+
+/*------------------------Header Section-----------------------*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54/ 14%);
+}
+
+.logo img{
+    width: 120%;
+    height: 55px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 11px 20px;
+}
+
+.navbar a:hover{
+    color: hsl(250,69%,61%);
+}
+
+/* ----------------------Home Section---------------------- */
+#home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.content{
+    flex:1 1 17rem;
+    margin-top: 5%;
+}
+
+.content span{
+    font-size: 30px;
+    color: hsl(250, 8%, 45%);
+    margin-top: 10px;
+
+}
+
+.content h1{
+    color: hsl(250,69%,61%);
+    font-size: 50px;
+    margin-top: 8px;
+}
+
+.content p{
+    font-size: 28px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: hsl(250, 8%, 15%);
+}
+
+.icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    margin: 30px 15px 30px 0px;
+    transition: 0.5s;    
+}
+
+.icons a:hover,
+.home-img img:hover,
+.col1 img:hover{
+    transform: translateY(-5px);
+    background: white;
+    color: hsl(250,69%,61%);
+    box-shadow: 0 0 30px hsl(250,69%,61%);
+}
+
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: hsl(250,69%,61%);
+    border: 2px solid hsl(250,69%,61%);
+    border-radius: 6px;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer; 
+}
+
+.btn-box:hover{
+    color: hsl(250,69%,61%);
+    background: #fff;
+}
+
+.home-img{
+    flex:1 1 17rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6%;
+}
+
+.home-img img{
+    max-width: 380px;
+    border: 8px solid hsl(250,69%,61%);
+    border-radius: 100%;
+}
+
+/*------------------------About Section-----------------------*/
+.heading{
+    text-align: center;
+}
+
+.heading span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: hsl(250, 8%, 45%);
+}
+
+.heading h1{
+    font-size: 2.5rem;
+    color: hsl(250, 8%, 15%);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col1{
+    flex-basis: 35%;
+}
+
+.col1 img{
+    width: 80%;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.col2{
+    flex-basis: 60%;
+}
+
+.col2 p{
+    font-size: 22px;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+/*------------------------Skills Section-----------------------*/
+.wrapper{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.wrapper .card{
+    background: #fff;
+    width: 280px;
+    height: 180px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 8px 0px 10px 5px;
+    box-shadow: 0px 10px 15px hsl(248, 100%, 91%);
+}
+
+.wrapper .card .circle{
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.card .circle .box,.card .circle .box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.card .circle .box{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+}
+
+.card .circle:hover .box{
+    transform: translate(-50%, -50%) scale(0.91);
+}
+
+.circle .box span{
+    font-size: 25px;
+    color: hsl(250, 8%, 15%);
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.card .circle:hover .box span{
+    transform: translate(-45%, -45%) scale(1.09);
+}
+
+.card .text{
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(250, 8%, 15%)
+}
+
+/*------------------------Project Section-----------------------*/
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 60px;
+    margin-top: 40px;
+}
+
+.pro{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 320px;
+    height: 250px;
+}
+
+.pro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgb(0,0,0,0.6),hsl(250,69%,61%));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    color: #fff;
+}
+
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color:  hsl(250,69%,61%);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.pro:hover img{
+    transform: scale(1.1);
+}
+
+.pro:hover .layer{
+    height: 100%;;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid  hsl(250,69%,61%);
+    padding: 14px 50px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s;
+    background:  hsl(250,69%,61%);
+}
+
+.btn:hover{
+    color: hsl(250,69%,61%);
+    background: #fff;
+}
+
+/*------------------------Contact Section-----------------------*/
+.left{
+    flex-basis: 35%;
+}
+
+.right{
+    flex-basis: 60%;
+}
+
+.left p{
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.left p i{
+    color: hsl(250,69%,61%);
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.right form{
+    width: 100%;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: hsl(248, 100%, 91%);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.message .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+/*------------------------Footer Section-----------------------*/
+footer{
+    position: sticky;
+    width: 100%;
+    padding: 30px 10%;
+    background-color: hsl(250,69%,61%);
+    margin-top: -4%;
+    margin-bottom: -13%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
