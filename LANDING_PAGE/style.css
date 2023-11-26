@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px 10%;
+}
+
+img{
+    width: 100%;
+}
+
+/* ----------------------Header Section---------------------- */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    transition: 0.2s;
+    background: #017143;
+    box-shadow: 0 4px 41px rgb(14 55 54/ 14%);
+}
+
+.logo img{
+    width: 60px;
+    background: #fff;
+    border-radius: 400px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    padding: 11px 20px;
+}
+
+.navbar a:hover{
+    color: #1efda2;
+}
+
+/* ----------------------Home Section---------------------- */
+#home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    flex: 1 1 17rem;
+    max-width: 600px;
+    margin-top: 5%;
+    margin-left: 10px;
+}
+
+.content span{
+    color: #333;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.content h1{
+    color: #017143;
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.content p{
+    color: #333;
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 25px;
+    margin-top: 25px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    border: 2px solid #017143;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color: #017143;
+    background: #fff;
+}
+
+.home-img{
+    flex: 1 1 17rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5%;
+}
+
+.home-img img{
+    max-width: 450px;
+}
+
+.home-img img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #017143;
+}
+
+/* ----------------------Menu Section---------------------- */
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 35px;
+    color: #017143;
+}
+
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+.menu-container .box{
+    flex: 1 10rem 10rem;
+    background: #017143;
+    padding: 20px 5%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+.menu-container .box .box-img{
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+
+.menu-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.stars{
+    margin: 1rem 0 0.1rem;
+    font-size: 25px;
+}
+
+.menu-container .box .stars .bx{
+    color: #fff;
+}
+
+.menu-container .box h2{
+    color: #fff;
+    font-size: 22px;
+}
+
+.menu-container .box span{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.box .btn{
+    border: 2px solid #017143;
+    color: #017143;
+    background: #fff;
+}
+
+.box .btn:hover{
+    background: #017143;
+    color: #fff;
+}
+
+/* ----------------------Delivery,App and Rewards Section---------------------- */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.all-img{
+    flex: 1 1 21rem;
+}
+
+.text{
+    flex: 1 1 21rem;
+}
+
+.text h2{
+    font-size: 35px;
+    color: #017143;
+}
+
+.text p{
+    margin: 2rem 0 1rem;
+    text-align: justify;
+    font-size: 30px;
+}
+
+/* ----------------------Contact Section---------------------- */
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #017143;
+    margin-bottom: -18%;
+    padding: 40px;
+}
+
+.icons a{
+    font-size: 30px;
+    margin: 0.5rem;
+}
+
+.icons a .bx{
+    padding: 5px;
+    color: #fff;
+    background: #017143;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.icons a .bx:hover{
+    background: #1efda2;
+    color: #017143;
+    border: #017143;
+}
+
+.links{
+    margin: 1rem 0 1rem;
+}
+
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: #fff;
+}
+
+.links a:hover{
+    color: #1efda2;
+}
+
+#contact p{
+    text-align: center;
+    color: #fff;
+}
